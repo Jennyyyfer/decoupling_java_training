@@ -1,4 +1,4 @@
-package fr.lernejo;
+package fr.lernejo.logger;
 
 import java.util.function.BiFunction;
 
@@ -10,7 +10,7 @@ public class Sample {
 
     public int fact(int n) {
         if (n < 0) {
-            throw new IllegalArgumentException("N should be positive");
+            throw new IllegalArgumntException("N should be positive");
         }
         return n == 0 ? 1 : n * fact(n - 1);
     }
@@ -27,3 +27,4 @@ public class Sample {
         }
     }
 }
+
